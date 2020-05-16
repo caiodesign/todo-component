@@ -12,7 +12,10 @@
     "jest": true
   },
   "rules": {
-    "semi": ["error", "never"],
+    "semi": [
+      "error",
+      "never"
+    ],
     "import/first": 0,
     "import/no-extraneous-dependencies": 0,
     "react/default-props-match-prop-types": 0,
@@ -20,7 +23,12 @@
     "import/prefer-default-export": 0,
     "no-confusing-arrow": 0,
     "no-restricted-globals": 0,
-    "import/namespace": [2, { "allowComputed": true }],
+    "import/namespace": [
+      2,
+      {
+        "allowComputed": true
+      }
+    ],
     "react/require-default-props": 0,
     "no-return-assign": 0,
     "object-curly-newline": 0,
@@ -28,10 +36,20 @@
     "jsx-a11y/no-noninteractive-element-interactions": "off",
     "jsx-a11y/click-events-have-key-events": "off",
     "import/no-named-as-default-member": "off",
-    "max-len": ["error", { "code": 80, "tabWidth": 4 }],
+    "max-len": [
+      "error",
+      {
+        "code": 80,
+        "tabWidth": 4
+      }
+    ],
     "padding-line-between-statements": [
       "error",
-      { "blankLine": "always", "prev": "*", "next": "return" }
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
     ],
     "react/jsx-filename-extension": [
       1,
@@ -43,16 +61,35 @@
       }
     ],
     "react/prefer-stateless-function": "off",
-    "jsx-a11y/anchor-is-valid": [ "error", {
-      "components": [ "Link" ],
-      "specialLink": [ "to" ],
-      "aspects": [ "noHref", "invalidHref", "preferButton" ]
-    }]
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": [
+          "Link"
+        ],
+        "specialLink": [
+          "to"
+        ],
+        "aspects": [
+          "noHref",
+          "invalidHref",
+          "preferButton"
+        ]
+      }
+    ]
   },
   "settings": {
     "import/resolver": {
       "node": {
-        "extensions": [".js",".jsx",".vue"]
+        "moduleDirectory": [
+          "node_modules",
+          "src/"
+        ],
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".vue"
+        ]
       }
     }
   }
